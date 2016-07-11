@@ -31,7 +31,7 @@ class LibByMrOwl: NSObject {
     //根据URL获取信息
     //参数：URL（要加载的Url）
     //参数：completionHandler（对于返回数据的操作）
-    static func loadUrlData(URL:String , completionHandler:(NSURLResponse!,NSData!,NSError!) -> Void){
+    static func loadUrlData(URL:String , completionHandler:(NSURLResponse?,NSData?,NSError?) -> Void){
         let url = NSURL(string: URL)
         let loadRequest = NSURLRequest(URL: url!)
         let loadQueue = NSOperationQueue()
